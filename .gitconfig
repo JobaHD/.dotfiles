@@ -1,0 +1,7 @@
+[user]
+	name = JobaHD
+	email = 92954275+JobaHD@users.noreply.github.com
+[init]
+	defaultBranch = main
+[credential]
+	helper = cache
