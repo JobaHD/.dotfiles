@@ -27,3 +27,5 @@ fi
 export PATH="$HOME/bin/.dotfiles/.bin:$PATH"
 
 unset rc
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
