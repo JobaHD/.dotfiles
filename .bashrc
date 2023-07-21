@@ -24,4 +24,6 @@ if [ -d ~/.bashrc.d ]; then
 	done
 fi
 
+export PATH="$HOME/bin/.dotfiles/.bin:$PATH"
+
 unset rc
