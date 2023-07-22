@@ -6,7 +6,7 @@
 
 2. Install stow
 
-3. Run stow on the ~/.dotfiles directory
+3. Run stow . on the ~/.dotfiles directory
 
 ### Extra manual steps
 
