@@ -1,21 +1,20 @@
 # .dotfiles
 
-### Steps 
+### Steps
 
-1. Clone repo into the home directory
+1. Install curl and stow
 
-2. Install stow
+2. Install zsh, do not create .zshrc
 
-3. Run stow . on the ~/.dotfiles directory
+3. Install oh-my-zsh
 
-### Extra manual steps
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-oh-my-zsh and fzf are linked to external repos, until I figure out how to use submodules the files must be installed manually
+4. Install fzf
 
-1. Delete oh-my-zsh and fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 
-2. Clone their repos
+7. Move .fzf .fzf.bash .fzf.zsh to .dotfiles
 
-3. Run install scripts
-
-4. Migrate old configs to newly created zshrc file
+8. 
