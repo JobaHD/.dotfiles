@@ -17,4 +17,6 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 7. Move .fzf .fzf.bash .fzf.zsh to .dotfiles
 
-8. 
+8. Swap caps lock and escape
+
+localectl --no-convert set-x11-keymap us kinesis "" "caps:swapescape"
