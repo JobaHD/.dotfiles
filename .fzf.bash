@@ -1,13 +1,13 @@
 # Setup fzf
 # ---------
-if [[ ! "$PATH" == */home/jovahd/.fzf/bin* ]]; then
-  PATH="${PATH:+${PATH}:}/home/jovahd/.fzf/bin"
+if [[ ! "$PATH" == */opt/homebrew/opt/fzf/bin* ]]; then
+  PATH="${PATH:+${PATH}:}/opt/homebrew/opt/fzf/bin"
 fi
 
 # Auto-completion
 # ---------------
-[[ $- == *i* ]] && source "/home/jovahd/.fzf/shell/completion.bash" 2> /dev/null
+[[ $- == *i* ]] && source "/opt/homebrew/opt/fzf/shell/completion.bash" 2> /dev/null
 
 # Key bindings
 # ------------
-source "/home/jovahd/.fzf/shell/key-bindings.bash"
+source "/opt/homebrew/opt/fzf/shell/key-bindings.bash"

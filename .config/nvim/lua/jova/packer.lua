@@ -12,7 +12,6 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use("nvim-treesitter/nvim-treesitter-context");
     use 'folke/tokyonight.nvim'
 
     use({
@@ -34,6 +33,7 @@ return require('packer').startup(function(use)
             ts_update()
         end, }
     use("nvim-treesitter/playground")
+    use("nvim-treesitter/nvim-treesitter-context");
     use("theprimeagen/harpoon")
     use("theprimeagen/refactoring.nvim")
     use("mbbill/undotree")
@@ -64,7 +64,6 @@ return require('packer').startup(function(use)
 
     use("folke/zen-mode.nvim")
     use("eandrju/cellular-automaton.nvim")
-    use("laytan/cloak.nvim")
 
     use('MunifTanjim/prettier.nvim')
 end)
