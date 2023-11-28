@@ -6,7 +6,7 @@
 
 ### Variables
 #
-# Logo key. Use Mod1 for Alt.
+# Logo key. Use Mod1 for Alt. Use Mod4 for Cmd.
 set $mod Mod1
 # Home row direction keys, like vim
 set $left h
@@ -31,7 +31,7 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
-output * bg /usr/share/backgrounds/default.png fill
+output * bg /home/jrod/Downloads/1330505.png fill
 #
 # Example configuration:
 #
@@ -65,6 +65,13 @@ output * bg /usr/share/backgrounds/default.png fill
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
+
+	#Swap esc and caps lock
+	input type:keyboard {
+	xkb_layout us
+	xkb_options "caps:swapescape,altwin:ctrl_win"
+	}
+
 
 ### Key bindings
 #

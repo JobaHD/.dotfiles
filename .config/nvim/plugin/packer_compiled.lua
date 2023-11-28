@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/home/jrod/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["cellular-automaton.nvim"] = {
-    loaded = true,
-    path = "/home/jrod/.local/share/nvim/site/pack/packer/start/cellular-automaton.nvim",
-    url = "https://github.com/eandrju/cellular-automaton.nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/jrod/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -168,11 +163,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jrod/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["prettier.nvim"] = {
-    loaded = true,
-    path = "/home/jrod/.local/share/nvim/site/pack/packer/start/prettier.nvim",
-    url = "https://github.com/MunifTanjim/prettier.nvim"
   },
   ["refactoring.nvim"] = {
     loaded = true,

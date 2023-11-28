@@ -1,0 +1,6 @@
+{
+    "device": "alsa_input.usb-Kingston_HyperX_Cloud_Flight_Wireless_Headset-00.mono-fallback",
+    "device-description": "HyperX Cloud Flight Wireless Headset Mono",
+    "device-profile": "analog-input-mic",
+    "preset-name": "improvedMic"
+}
