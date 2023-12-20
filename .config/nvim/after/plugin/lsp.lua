@@ -5,10 +5,9 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
     'tsserver',
-    'omnisharp',
-    'rust_analyzer',
     'eslint',
 })
+
 
 -- Fix Undefined global 'vim'
 lsp.nvim_workspace()
@@ -50,29 +49,17 @@ local on_attach = (function(client, bufnr)
     vim.keymap.set("n", "<leader>rf", function() vim.lsp.buf.references() end, opts)
     vim.keymap.set("n", "<leader>rn", function() vim.lsp.buf.rename() end, opts)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
+    print(client.name .. ': Hello there.')
 end)
 
 lsp.on_attach(on_attach)
-
-lsp_config["dartls"].setup({
-	on_attach = on_attach,
-	settings = {
-		dart = {
-			analysisExcludedFolders = {
-				vim.fn.expand("$HOME/AppData/Local/Pub/Cache"),
-				vim.fn.expand("$HOME/.pub-cache"),
-				vim.fn.expand("/opt/homebrew/"),
-				vim.fn.expand("$HOME/tools/flutter/"),
-			},
-			updateImportsOnRename = true,
-			completeFunctionCalls = true,
-			showTodos = true,
-		},
-	},
-})
 
 lsp.setup()
 
 vim.diagnostic.config({
     virtual_text = true
+})
+
+lsp_config.clangd.setup({
+    on_attach = on_attach;
 })

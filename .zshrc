@@ -11,15 +11,10 @@ fi
 # Path to your oh-my-zsh installation.
 export PATH="$PATH:$HOME/source/flutter/bin"
 export PATH="$PATH:$HOME/miniconda3/bin:$PATH"  # commented out by conda initialize
+export PATH="$PATH:$HOME/bin:$PATH"  # commented out by conda initialize
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="/usr/bin/java:$PATH"
 eval "$(rbenv init -)"
-
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -28,19 +23,8 @@ eval "$(rbenv init -)"
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
-# Uncomment one of the following lines to change the auto-update behavior
-# zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
-# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
-
-# Uncomment the following line to change how often to auto-update (in days).
-# zstyle ':omz:update' frequency 13
-
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
@@ -58,14 +42,6 @@ eval "$(rbenv init -)"
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -92,6 +68,13 @@ eval "$(rbenv init -)"
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+# Set history file and limits
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -100,11 +83,12 @@ eval "$(rbenv init -)"
 # Example aliases
  alias zshconfig="mate ~/.zshrc"
  alias l="ls -alh"
- alias spot="flatpak run io.github.hrkfdn.ncspot"
+ alias gccStrict="gcc -Wall -W -O"
  alias kbon="light -s sysfs/leds/kbd_backlight -S 10"
  alias kboff="light -s sysfs/leds/kbd_backlight -S 0"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source ~/.profile
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -118,6 +102,7 @@ function flutter-watch(){
   resize-pane -y 5 -t 1 \;\
   select-pane -t 0 \;
 }
+
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
