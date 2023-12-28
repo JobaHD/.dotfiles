@@ -83,9 +83,12 @@ setopt appendhistory
 # Example aliases
  alias zshconfig="mate ~/.zshrc"
  alias l="ls -alh"
- alias gccStrict="gcc -Wall -W -O"
+ alias gccStrict="gcc -Wall -Wextra"
  alias kbon="light -s sysfs/leds/kbd_backlight -S 10"
  alias kboff="light -s sysfs/leds/kbd_backlight -S 0"
+ alias spot="flatpak run io.github.hrkfdn.ncspot"
+ alias vim="nvim";
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source ~/.profile
