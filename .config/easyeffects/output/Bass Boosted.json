@@ -1,8 +1,9 @@
 {
     "output": {
-        "bass_enhancer": {
+        "bass_enhancer#0": {
             "amount": 5.0,
             "blend": 0.0,
+            "bypass": false,
             "floor": 20.0,
             "floor-active": false,
             "harmonics": 8.5,
@@ -10,20 +11,27 @@
             "output-gain": 0.0,
             "scope": 80.0
         },
-        "blocklist": [],
-        "convolver": {
+        "blocklist": [
+            "effect_output.j416-convolver"
+        ],
+        "convolver#0": {
+            "autogain": true,
+            "bypass": false,
             "input-gain": -2.0,
             "ir-width": 100,
             "kernel-path": "/home/jrod/.config/easyeffects/irs/Razor Surround ((48k Z-Edition)) 2.Stereo +20 bass.irs",
             "output-gain": 0.0
         },
-        "crossfeed": {
+        "crossfeed#0": {
+            "bypass": false,
             "fcut": 700,
             "feed": 4.5,
             "input-gain": 0.0,
             "output-gain": 0.0
         },
-        "equalizer": {
+        "equalizer#0": {
+            "balance": 0.0,
+            "bypass": false,
             "input-gain": -2.0,
             "left": {
                 "band0": {
@@ -34,7 +42,8 @@
                     "q": 1.504760237537245,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band1": {
                     "frequency": 64.0,
@@ -44,7 +53,8 @@
                     "q": 1.5047602375372453,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band2": {
                     "frequency": 125.0,
@@ -54,7 +64,8 @@
                     "q": 1.504760237537245,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band3": {
                     "frequency": 250.0,
@@ -64,7 +75,8 @@
                     "q": 1.504760237537245,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band4": {
                     "frequency": 500.0,
@@ -74,7 +86,8 @@
                     "q": 1.5047602375372453,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band5": {
                     "frequency": 1000.0,
@@ -84,7 +97,8 @@
                     "q": 1.504760237537245,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band6": {
                     "frequency": 2000.0,
@@ -94,7 +108,8 @@
                     "q": 1.5047602375372449,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band7": {
                     "frequency": 4000.0,
@@ -104,7 +119,8 @@
                     "q": 1.5047602375372449,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band8": {
                     "frequency": 8000.0,
@@ -114,7 +130,8 @@
                     "q": 1.5047602375372453,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band9": {
                     "frequency": 16000.0,
@@ -124,12 +141,15 @@
                     "q": 1.504760237537245,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 }
             },
             "mode": "IIR",
             "num-bands": 10,
             "output-gain": 0.0,
+            "pitch-left": 0.0,
+            "pitch-right": 0.0,
             "right": {
                 "band0": {
                     "frequency": 32.0,
@@ -139,7 +159,8 @@
                     "q": 1.504760237537245,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band1": {
                     "frequency": 64.0,
@@ -149,7 +170,8 @@
                     "q": 1.5047602375372453,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band2": {
                     "frequency": 125.0,
@@ -159,7 +181,8 @@
                     "q": 1.504760237537245,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band3": {
                     "frequency": 250.0,
@@ -169,7 +192,8 @@
                     "q": 1.504760237537245,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band4": {
                     "frequency": 500.0,
@@ -179,7 +203,8 @@
                     "q": 1.5047602375372453,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band5": {
                     "frequency": 1000.0,
@@ -189,7 +214,8 @@
                     "q": 1.504760237537245,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band6": {
                     "frequency": 2000.0,
@@ -199,7 +225,8 @@
                     "q": 1.5047602375372449,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band7": {
                     "frequency": 4000.0,
@@ -209,7 +236,8 @@
                     "q": 1.5047602375372449,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band8": {
                     "frequency": 8000.0,
@@ -219,7 +247,8 @@
                     "q": 1.5047602375372453,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 },
                 "band9": {
                     "frequency": 16000.0,
@@ -229,22 +258,26 @@
                     "q": 1.504760237537245,
                     "slope": "x1",
                     "solo": false,
-                    "type": "Bell"
+                    "type": "Bell",
+                    "width": 4.0
                 }
             },
             "split-channels": false
         },
-        "maximizer": {
+        "maximizer#0": {
+            "bypass": false,
             "ceiling": 0.0,
+            "input-gain": 0.0,
+            "output-gain": 0.0,
             "release": 3.149999999999997,
             "threshold": -3.0000000000000013
         },
         "plugins_order": [
-            "equalizer",
-            "convolver",
-            "bass_enhancer",
-            "crossfeed",
-            "maximizer"
+            "equalizer#0",
+            "convolver#0",
+            "bass_enhancer#0",
+            "crossfeed#0",
+            "maximizer#0"
         ]
     }
 }

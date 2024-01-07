@@ -8,12 +8,13 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-export PATH="$PATH:$HOME/source/flutter/bin"
+# For python environments (anaconda)
 export PATH="$PATH:$HOME/miniconda3/bin:$PATH"  # commented out by conda initialize
 export PATH="$PATH:$HOME/bin:$PATH"  # commented out by conda initialize
+
+# For setting up ruby version
 export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="/usr/bin/java:$PATH"
+export PATH="$PATH:/usr/bin/java"
 eval "$(rbenv init -)"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -81,14 +82,17 @@ setopt appendhistory
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
- alias zshconfig="mate ~/.zshrc"
- alias l="ls -alh"
- alias gccStrict="gcc -Wall -Wextra"
+ alias l="ls -lh"
+ alias la="ls -alh"
+ alias gccStrict="gcc -Wall -Wextra -Wpedantic"
  alias kbon="light -s sysfs/leds/kbd_backlight -S 10"
  alias kboff="light -s sysfs/leds/kbd_backlight -S 0"
  alias spot="flatpak run io.github.hrkfdn.ncspot"
  alias vim="nvim";
 
+# Zsh auto-suggestions
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+bindkey '^y' autosuggest-accept
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source ~/.profile
@@ -97,20 +101,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# flutter run script
-function flutter-watch(){
-  tmux send-keys "flutter run $1 $2 $3 $4 --pid-file=/tmp/tf1.pid" Enter \;\
-  split-window -v \;\
-  send-keys 'npx -y nodemon -e dart -x "cat /tmp/tf1.pid | xargs kill -s USR1"' Enter \;\
-  resize-pane -y 5 -t 1 \;\
-  select-pane -t 0 \;
-}
-
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -126,4 +120,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
