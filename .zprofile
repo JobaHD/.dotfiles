@@ -43,4 +43,4 @@ function pomo() {
     done
 }
 
-
+eval "$(/opt/homebrew/bin/brew shellenv)"
