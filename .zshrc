@@ -44,23 +44,24 @@ setopt appendhistory
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+ alias ls="ls -G"
  alias l="ls -lh"
  alias la="ls -alh"
  alias gccStrict="gcc -Wall -Wextra -Wpedantic"
-# alias vim="nvim";
+ alias vim="nvim";
 
 # Zsh auto-suggestions
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-bindkey '^y' autosuggest-accept
+#source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+#bindkey '^y' autosuggest-accept
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source ~/.profile
+source ~/.zprofile
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -79,3 +80,4 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
