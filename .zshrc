@@ -8,6 +8,9 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# For openjdk and java
+export PATH="$PATH:/opt/homebrew/opt/openjdk@21/bin"
+
 # For python environments (anaconda)
 #export PATH="$PATH:$HOME/miniconda3/bin:$PATH"  # commented out by conda initialize
 #export PATH="$PATH:$HOME/bin:$PATH"  # commented out by conda initialize
@@ -60,6 +63,7 @@ source ~/.zprofile
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+source $(brew --prefix nvm)/nvm.sh
 
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
