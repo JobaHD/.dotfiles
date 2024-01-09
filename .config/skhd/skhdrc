@@ -6,6 +6,9 @@
 alt - e : yabai -m space --layout bsp
 alt - s : yabai -m space --layout stack
 
+# restart yabai
+alt + shift - r : yabai --restart-service
+
 # lock screen immediately
 alt - escape : pmset displaysleepnow
 
