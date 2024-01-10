@@ -14,7 +14,7 @@ alt - escape : pmset displaysleepnow
 
 # === launch commands ===
 # open terminal
-alt - return : open -n /Applications/terminal
+alt - return : open -n /Applications/Alacritty.app/
 
 # === Resize Mode ===
 # Set resize border color
