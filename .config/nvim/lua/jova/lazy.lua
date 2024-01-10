@@ -31,7 +31,7 @@ require("lazy").setup({
         "folke/trouble.nvim",
         config = function()
             require("trouble").setup {
-                icons = false,
+                icons = false
             }
         end
     },
