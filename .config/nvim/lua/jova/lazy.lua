@@ -22,12 +22,17 @@ require("lazy").setup({
         tag = '0.1.5',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
-    "loctvl842/monokai-pro.nvim",
+    {
+        "folke/tokyonight.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {},
+    },
     {
         "folke/trouble.nvim",
         config = function()
             require("trouble").setup {
-                icons = false,
+                icons = false
             }
         end
     },
