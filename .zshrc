@@ -9,6 +9,7 @@ fi
 
 # For openjdk and java
 export PATH="$PATH:/opt/homebrew/opt/openjdk@21/bin"
+export TERM=alacritty
 
 # For python environments (anaconda)
 #export PATH="$PATH:$HOME/miniconda3/bin:$PATH"  # commented out by conda initialize
