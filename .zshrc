@@ -13,9 +13,9 @@ export PATH="$PATH:$HOME/miniconda3/bin:$PATH"  # commented out by conda initial
 export PATH="$PATH:$HOME/bin:$PATH"  # commented out by conda initialize
 
 # For setting up ruby version
-export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="$PATH:/usr/bin/java"
-eval "$(rbenv init -)"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# export PATH="$PATH:/usr/bin/java"
+# eval "$(rbenv init -)"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -120,3 +120,4 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+source ~/powerlevel10k/powerlevel10k.zsh-theme
