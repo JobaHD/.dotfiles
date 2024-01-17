@@ -31,7 +31,11 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
+<<<<<<< HEAD
 output * bg /home/jrod/Wallpapers/selen.png fill
+=======
+output * bg /home/jrod/Wallpapers/yayayayayaya.jpg fill
+>>>>>>> 5685bd3 (Work pls.)
 #
 # Example configuration:
 #
@@ -236,7 +240,7 @@ include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "
 
 
 # Terminal will autostart on workspace 1
-exec foot && sway '[app_id="foot"]' move container to workspace 1
+exec alacritty && sway '[app_id="alacritty"]' move container to workspace 1
 
 # Firefox will autostart on workspace 2
 exec firefox && sway '[app_id="firefox"]' move container to workspace 2

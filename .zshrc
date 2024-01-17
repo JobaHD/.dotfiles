@@ -94,8 +94,9 @@ setopt appendhistory
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^y' autosuggest-accept
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source ~/.profile
+# Out until I figure out submodules
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#source ~/.profile
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -120,4 +121,9 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+<<<<<<< HEAD
+=======
+#
+# p10k theme
+>>>>>>> 5685bd3 (Work pls.)
 source ~/powerlevel10k/powerlevel10k.zsh-theme
