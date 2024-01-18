@@ -121,8 +121,6 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-<<<<<<< HEAD
-=======
 #
 # p10k theme
 >>>>>>> 5685bd3 (Work pls.)

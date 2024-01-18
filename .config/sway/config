@@ -31,11 +31,7 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
-<<<<<<< HEAD
-output * bg /home/jrod/Wallpapers/selen.png fill
-=======
 output * bg /home/jrod/Wallpapers/yayayayayaya.jpg fill
->>>>>>> 5685bd3 (Work pls.)
 #
 # Example configuration:
 #
