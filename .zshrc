@@ -123,5 +123,4 @@ unset __conda_setup
 # <<< conda initialize <<<
 #
 # p10k theme
->>>>>>> 5685bd3 (Work pls.)
 source ~/powerlevel10k/powerlevel10k.zsh-theme
