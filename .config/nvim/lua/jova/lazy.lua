@@ -62,4 +62,10 @@ require("lazy").setup({
             { 'rafamadriz/friendly-snippets' }, }
     },
     "folke/zen-mode.nvim",
+
+    "mfussenegger/nvim-dap",
+    "rcarriga/nvim-dap-ui",
+    "theHamsta/nvim-dap-virtual-text",
+    "nvim-telescope/telescope-dap.nvim",
+    "nvim-tree/nvim-web-devicons",
 })

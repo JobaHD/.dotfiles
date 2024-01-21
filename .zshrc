@@ -124,3 +124,5 @@ unset __conda_setup
 #
 # p10k theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+
