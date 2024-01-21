@@ -239,5 +239,5 @@ include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "
 exec alacritty && sway '[app_id="alacritty"]' move container to workspace 1
 
 # Firefox will autostart on workspace 2
-exec firefox && sway '[app_id="firefox"]' move container to workspace 2
+exec librewolf && sway '[app_id="librewolf"]' move container to workspace 2
 
