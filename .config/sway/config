@@ -241,3 +241,9 @@ exec alacritty && sway '[app_id="alacritty"]' move container to workspace 1
 # Firefox will autostart on workspace 2
 exec librewolf && sway '[app_id="librewolf"]' move container to workspace 2
 
+# Screenshot keybindings
+bindsym $mod+p       exec grimshot --notify save active
+bindsym $mod+Shift+p exec grimshot --notify save area
+
+#start notification daemon
+#exec dunst
