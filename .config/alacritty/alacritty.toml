@@ -28,7 +28,7 @@
 
 [font]
     normal = { family = "NotoMonoNerdFont", style = "Regular" }
-    size = 20.0
+    size = 16.0
 
 [window]
     opacity = 0.92
