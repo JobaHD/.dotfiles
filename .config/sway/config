@@ -69,7 +69,7 @@ output * bg /home/jrod/Wallpapers/selen.png fill
 	#Swap esc and caps lock
 	input type:keyboard {
 	xkb_layout us
-	xkb_options "caps:swapescape,altwin:ctrl_win"
+	xkb_options "altwin:ctrl_win"
 	}
 
 
