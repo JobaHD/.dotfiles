@@ -22,7 +22,11 @@ require("lazy").setup({
         tag = '0.1.5',
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
-    "loctvl842/monokai-pro.nvim",
+    {
+        'navarasu/onedark.nvim',
+        lazy = false,
+        priority = 1000,
+    },
     {
         "folke/trouble.nvim",
         config = function()
@@ -68,4 +72,5 @@ require("lazy").setup({
     "theHamsta/nvim-dap-virtual-text",
     "nvim-telescope/telescope-dap.nvim",
     "nvim-tree/nvim-web-devicons",
+    "eandrju/cellular-automaton.nvim",
 })
