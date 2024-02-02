@@ -3,11 +3,6 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-# for ghidra
-export JAVA_HOME="/opt/java/jdk-17.0.10+7"
-export PATH="$PATH:$JAVA_HOME"
-export PATH="$PATH:/opt/gradle/gradle-8.5/bin"
-export PATH="$PATH:$HOME/Source/Ghidra/ghidra_11.0_PUBLIC"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -110,31 +105,10 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
- alias l="ls -lh"
- alias la="ls -alh"
- alias gccStrict="gcc -Wall -Wextra -Wpedantic"
- alias kbon="light -s sysfs/leds/kbd_backlight -S 10"
- alias kboff="light -s sysfs/leds/kbd_backlight -S 0"
- alias spot="flatpak run io.github.hrkfdn.ncspot"
- alias vim="nvim";
- alias ghidra="ghidraRun.sh"
- alias ip="ip -c=auto"
+# Get personal config
+source ~/.zprofile
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-#don't ask
-function pomo() {
-    arg1=$1
-    shift
-    args="$*"
-
-    min=${arg1:?Example: pomo 15 Take a break}
-    sec=$((min * 60))
-    msg="${args:?Example: pomo 15 Take a break}"
-
-    while true; do
-        date '+%H:%M' && sleep "${sec:?}" && notify-send -u critical -t 5 -a pomo "${msg:?}"
-    done
-}
