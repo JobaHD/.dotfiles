@@ -41,5 +41,9 @@
     size = 16.0
 
 [window]
-    opacity = 0.96
+    opacity = 0.98
+    blur = true
+    dynamic_title = true
 
+[shell]
+    program = "/usr/bin/tmux"

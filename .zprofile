@@ -1,4 +1,6 @@
 VIM="nvim"
+export XDG_CURRENT_DESKTOP="KDE"
+export QT_QPA_PLATFORMTHEME="kde"
 
 source /usr/share/fzf/shell/key-bindings.zsh
 
