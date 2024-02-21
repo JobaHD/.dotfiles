@@ -2,7 +2,7 @@ VIM="nvim"
 export XDG_CURRENT_DESKTOP="KDE"
 export QT_QPA_PLATFORMTHEME="kde"
 
-source /usr/share/fzf/shell/key-bindings.zsh
+# source /usr/share/fzf/shell/key-bindings.zsh
 
 export JAVA_HOME="/opt/java/jdk-17.0.10+7"
 export GIT_EDITOR=$VIM
