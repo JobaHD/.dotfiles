@@ -36,3 +36,6 @@ white   = '#ffffff'
     opacity = 0.92
     blur = true
     dynamic_title = true
+
+[shell]
+    program = "/opt/homebrew/bin/tmux"

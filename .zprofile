@@ -27,7 +27,6 @@ export PATH="$HOME/.local/bin/scripts:$PATH"
  # Where should I put you?
 bindkey -s ^f "tmux-sessionizer\n"
 
-
 #don't ask
 function pomo() {
     arg1=$1
@@ -43,7 +42,7 @@ function pomo() {
     done
 }
 
-
+# change brew based on console arch.
 if [ "$(arch)" = "arm64" ]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 else
