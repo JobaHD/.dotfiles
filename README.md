@@ -1,3 +1,6 @@
+DEPRECATED DOCS (UPDATE PENDING).
+
+
 # .dotfiles
 
 ### Steps
