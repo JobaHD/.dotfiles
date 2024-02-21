@@ -33,7 +33,7 @@ white   = '#ffffff'
     size = 16.0
 
 [window]
-    opacity = 0.92
+    opacity = 0.95
     blur = true
     dynamic_title = true
 

@@ -4,15 +4,8 @@ export QT_QPA_PLATFORMTHEME="kde"
 
 # source /usr/share/fzf/shell/key-bindings.zsh
 
-export JAVA_HOME="/opt/java/jdk-17.0.10+7"
 export GIT_EDITOR=$VIM
 export DOTFILES="$HOME/.dotfiles"
-
-export PATH="$JAVA_HOME:$PATH"
-export PATH="/opt/gradle/gradle-8.5/bin:$PATH"
-export PATH="$HOME/Source/Ghidra/ghidra_11.0_PUBLIC:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/.local/bin/scripts:$PATH"
 
  alias l="ls -lh"
  alias la="ls -alh"
@@ -20,8 +13,6 @@ export PATH="$HOME/.local/bin/scripts:$PATH"
  alias kbon="light -s sysfs/leds/kbd_backlight -S 10"
  alias kboff="light -s sysfs/leds/kbd_backlight -S 0"
  alias spot="flatpak run io.github.hrkfdn.ncspot"
- alias vim="nvim";
- alias ghidra="ghidraRun.sh"
  alias ip="ip -c=auto"
 
  # Where should I put you?

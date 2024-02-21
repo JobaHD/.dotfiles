@@ -6,9 +6,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# For openjdk and java
-export PATH="$PATH:/opt/homebrew/opt/openjdk@21/bin"
 export TERM=alacritty
 
 # For python environments (anaconda)
