@@ -42,3 +42,5 @@ function pomo() {
         date '+%H:%M' && sleep "${sec:?}" && notify-send -u critical -t 5 -a pomo "${msg:?}"
     done
 }
+
+

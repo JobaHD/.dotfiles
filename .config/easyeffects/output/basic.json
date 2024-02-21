@@ -1,8 +1,0 @@
-{
-    "output": {
-        "blocklist": [
-            "effect_output.j416-convolver"
-        ],
-        "plugins_order": []
-    }
-}

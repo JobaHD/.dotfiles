@@ -7,6 +7,29 @@ fi
 
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# For python environments (anaconda)
+#export PATH="$PATH:$HOME/miniconda3/bin:$PATH"  # commented out by conda initialize
+#export PATH="$PATH:$HOME/bin:$PATH"  # commented out by conda initialize
+
+# For setting up ruby version
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#export PATH="$PATH:/usr/bin/java"
+#eval "$(rbenv init -)"
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Preferred editor for local and remote sessions
+ if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vim'
+ else
+   export EDITOR='mvim'
+ fi
+
 # Set history file and limits
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -20,13 +43,6 @@ setopt appendhistory
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
- # Preferred editor for local and remote sessions
- if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
- else
-   export EDITOR='nvim'
- fi
-
 # Compilation flags
  export ARCHFLAGS="-arch aarch64"
 
@@ -37,6 +53,20 @@ setopt appendhistory
 #
 # Get personal config
 source ~/.zprofile
+
+# Example aliases
+ alias l="ls -lh"
+ alias la="ls -alh"
+ alias gccStrict="gcc -Wall -Wextra -Wpedantic"
+# alias vim="nvim";
+
+# Zsh auto-suggestions
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+bindkey '^y' autosuggest-accept
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source ~/.profile
+>>>>>>> 47892e3 (removed linux-specific software, added macos alts for keybindings and window management)
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
