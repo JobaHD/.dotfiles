@@ -4,8 +4,12 @@ export QT_QPA_PLATFORMTHEME="kde"
 
 # source /usr/share/fzf/shell/key-bindings.zsh
 
+export JAVA_HOME="/opt/java/jdk-17.0.10+7"
 export GIT_EDITOR=$VIM
 export DOTFILES="$HOME/.dotfiles"
+
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin/scripts:$PATH"
 
  alias l="ls -lh"
  alias la="ls -alh"
