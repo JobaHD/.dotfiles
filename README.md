@@ -31,3 +31,7 @@ localectl --no-convert set-x11-keymap us kinesis "" "caps:swapescape"
 1. Install homebrew.
 
 2. Follow all steps above.
+
+3. Install Keepass and Librewolf and run the following command to enable browser integration.
+
+ln -s ~/Library/Application\ Support/Mozilla/NativeMessagingHosts ~/Library/Application\ Support/LibreWolf/NativeMessagingHosts
