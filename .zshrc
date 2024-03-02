@@ -8,10 +8,6 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export TERM=alacritty
 
-# For python environments (anaconda)
-#export PATH="$PATH:$HOME/miniconda3/bin:$PATH"  # commented out by conda initialize
-#export PATH="$PATH:$HOME/bin:$PATH"  # commented out by conda initialize
-
 # For setting up ruby version
 #export PATH="$HOME/.rbenv/bin:$PATH"
 #export PATH="$PATH:/usr/bin/java"
@@ -73,20 +69,21 @@ source $(brew --prefix nvm)/nvm.sh
 
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/home/jrod/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-#     if [ -f "/home/jrod/miniconda3/etc/profile.d/conda.sh" ]; then
-#         . "/home/jrod/miniconda3/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/home/jrod/miniconda3/bin:$PATH"
-#     fi
-# fi
-# unset __conda_setup
-# <<< conda initialize <<<
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/homebrew/Caskroom/miniconda/base/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
