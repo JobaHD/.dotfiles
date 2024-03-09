@@ -1,8 +1,5 @@
 VIM="nvim"
-export XDG_CURRENT_DESKTOP="KDE"
-export QT_QPA_PLATFORMTHEME="kde"
-
-# source /usr/share/fzf/shell/key-bindings.zsh
+#source /usr/share/fzf/shell/key-bindings.zsh
 
 export JAVA_HOME="/opt/java/jdk-17.0.10+7"
 export GIT_EDITOR=$VIM
@@ -13,6 +10,7 @@ export PATH="$HOME/.local/bin/scripts:$PATH"
 
  alias l="ls -lh"
  alias la="ls -alh"
+ alias vim="nvim"
  alias gccStrict="gcc -Wall -Wextra -Wpedantic"
  alias kbon="light -s sysfs/leds/kbd_backlight -S 10"
  alias kboff="light -s sysfs/leds/kbd_backlight -S 0"
