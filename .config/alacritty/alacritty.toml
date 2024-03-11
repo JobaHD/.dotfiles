@@ -40,3 +40,6 @@ white   = '#ffffff'
 
 [shell]
     program = "/opt/homebrew/bin/tmux"
+
+[env]
+    term = "xterm-256color"

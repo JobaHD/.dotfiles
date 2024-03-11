@@ -12,6 +12,7 @@ SAVEHIST=10000
 setopt appendhistory autocd extendedglob notify
 
 # End of lines configured by zsh-newuser-install
+
 # The following lines were added by compinstall
 zstyle :compinstall filename '/Users/jrod/.zshrc'
 
