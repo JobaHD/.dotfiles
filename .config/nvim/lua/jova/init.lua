@@ -1,6 +1,6 @@
 require("jova.set")
 require("jova.remap")
-require("jova.lazy");
+require("jova.lazy_init");
 
 local augroup = vim.api.nvim_create_augroup
 local JovaGroup = augroup('Jova', {})
