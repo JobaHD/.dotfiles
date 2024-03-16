@@ -30,7 +30,7 @@ white   = '#ffffff'
 
 [font]
     normal = { family = "NotoMono Nerd Font", style = "Regular" }
-    size = 18.0
+    size = 16.0
 
 [window]
     opacity = 0.95

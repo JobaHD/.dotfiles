@@ -68,16 +68,6 @@
                                     "key_code": "right_control"
                                 }
                             ]
-                        },
-                        {
-                            "from": {
-                                "key_code": "caps_lock"
-                            },
-                            "to": [
-                                {
-                                    "key_code": "delete_or_backspace"
-                                }
-                            ]
                         }
                     ],
                     "treat_as_built_in_keyboard": false

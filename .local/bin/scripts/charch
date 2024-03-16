@@ -1,0 +1,1 @@
+env /usr/bin/arch --$1 /bin/zsh --login

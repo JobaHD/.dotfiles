@@ -7,6 +7,7 @@ export DOTFILES="$HOME/.dotfiles"
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/bin/scripts:$PATH"
+export PATH="$CHROMEDRIVER:$PATH"
 
  alias l="ls -lhG"
  alias la="ls -alhG"
@@ -15,6 +16,8 @@ export PATH="$HOME/.local/bin/scripts:$PATH"
  alias kbon="light -s sysfs/leds/kbd_backlight -S 10"
  alias kboff="light -s sysfs/leds/kbd_backlight -S 0"
  alias spot="flatpak run io.github.hrkfdn.ncspot"
+ alias ip="ip -c=auto"
+ # dont ask (this should be an actual script
  alias ip="ip -c=auto"
 
  # Where should I put you?
