@@ -60,3 +60,10 @@ unset __conda_setup
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# zsh-autosuggestions config
+# Strategies to use to fetch a suggestion
+# Will try each strategy in order until a suggestion is returned
+ZSH_AUTOSUGGEST_STRATEGY=(completion match_prev_cmd)
+bindkey '^y' autosuggest-accept

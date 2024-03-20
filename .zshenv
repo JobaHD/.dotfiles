@@ -1,17 +1,18 @@
 VIM="nvim"
 #source /usr/share/fzf/shell/key-bindings.zsh
 
-export JAVA_HOME="/opt/java/jdk-17.0.10+7"
+#export JAVA_HOME="/opt/java/jdk-17.0.10+7"
 export GIT_EDITOR=$VIM
 export DOTFILES="$HOME/.dotfiles"
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/bin/scripts:$PATH"
-export PATH="$CHROMEDRIVER:$PATH"
+#export PATH="$CHROMEDRIVER:$PATH"
 
  alias l="ls -lhG"
  alias la="ls -alhG"
  alias vim="nvim"
+ alias rg="rg --pretty"
  alias gccStrict="gcc -Wall -Wextra -Wpedantic"
  alias kbon="light -s sysfs/leds/kbd_backlight -S 10"
  alias kboff="light -s sysfs/leds/kbd_backlight -S 0"
