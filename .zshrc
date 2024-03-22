@@ -1,3 +1,4 @@
+fastfetch
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -10,6 +11,8 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory autocd extendedglob notify
+# Set terminal to vim mode.
+bindkey -v
 
 # End of lines configured by zsh-newuser-install
 
@@ -67,3 +70,6 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Will try each strategy in order until a suggestion is returned
 ZSH_AUTOSUGGEST_STRATEGY=(completion match_prev_cmd)
 bindkey '^y' autosuggest-accept
+#
+ # Where should I put you?
+bindkey -s '^F' "tmux-sessionizer\n"

@@ -21,8 +21,6 @@ export PATH="$HOME/.local/bin/scripts:$PATH"
  # dont ask (this should be an actual script
  alias ip="ip -c=auto"
 
- # Where should I put you?
-bindkey -s ^f "tmux-sessionizer\n"
 
 #don't ask
 function pomo() {
