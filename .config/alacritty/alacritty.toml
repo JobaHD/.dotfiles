@@ -34,9 +34,7 @@ white   = '#ffffff'
 
 [window]
     opacity = 0.95
-    blur = true
     dynamic_title = true
-    decorations = "buttonless"
 
 [shell]
     program = "/opt/homebrew/bin/tmux"
