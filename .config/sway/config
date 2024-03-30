@@ -14,7 +14,7 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 # Recommends: foot
-set $term alacritty
+set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -300,7 +300,7 @@ include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "
 exec dunst
 
 # Terminal will autostart on workspace 1
-exec alacritty && sway '[app_id="alacritty"]' move container to workspace 1
+exec foot && sway '[app_id="foot"]' move container to workspace 1
 
 # Firefox will autostart on workspace 2
 exec librewolf && sway '[app_id="librewolf"]' move container to workspace 2

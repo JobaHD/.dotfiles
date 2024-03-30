@@ -114,7 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # Lines configured by zsh-newuser-install
 
-export TERM=alacritty
+export TERM=foot
 
 
 # User configuration
