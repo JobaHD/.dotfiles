@@ -129,6 +129,21 @@ input type:touchpad {
     bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
     bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 
+    # Brightness controls
+    # screen backlight, first set min and restore previous
+    exec light -N 5
+    exec light -I
+    bindsym XF86MonBrightnessUp   exec "light -A 10 && light -O"
+    bindsym XF86MonBrightnessDown exec "light -U 10 && light -O"
+    # keyboard backlight
+    bindsym XF86KbdBrightnessUp   exec "light -S 100 -s sysfs/leds/spi::kbd_backlight"
+    bindsym XF86KbdBrightnessDown exec "light -S 0   -s sysfs/leds/spi::kbd_backlight"
+
+    # Audio Controls
+    bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
