@@ -115,7 +115,7 @@ input "1452:641:Apple_Internal_Keyboard_/_Trackpad" {
 	#Make cmd and ctrl the same
 	input type:keyboard {
 	xkb_layout us
-	xkb_options "caps:swapescape,altwin:ctrl_win"
+	xkb_options "caps:backspace,shift:both_capslock,altwin:ctrl_win"
 	}
 
 

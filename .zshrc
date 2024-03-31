@@ -114,8 +114,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # Lines configured by zsh-newuser-install
 
+# For nvim proper terminal support
 export TERM=foot
-
 
 # User configuration
 
@@ -132,8 +132,6 @@ bindkey '^y' autosuggest-accept
 #
  # Where should I put you?
 bindkey -s '^F' "tmux-sessionizer\n"
-
-source ~/.zprofile
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
