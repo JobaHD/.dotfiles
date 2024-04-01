@@ -36,12 +36,13 @@ set $laptop_screen 'eDP-1'
 output $laptop_screen {
     scale 2
     scale_filter smart
+    adaptive_sync on
 }
 
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
-output * bg /home/jrod/Wallpapers/yayayayayaya.jpg fill
+output * bg /home/jrod/Wallpapers/ganyu.png fill
 
 # Status Bar (Waybar)
 bar {
