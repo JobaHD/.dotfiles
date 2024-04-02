@@ -21,9 +21,10 @@ export PATH="$HOME/.local/bin/scripts:$PATH"
  # dont ask (this should be an actual script
  alias ip="ip -c=auto"
 
-if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  exec sway
-fi
+ # Star sway compositor
+# if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+#   exec Hyprland
+# fi
 
 #don't ask
 function pomo() {
