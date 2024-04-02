@@ -15,3 +15,7 @@
         - fd-find
         - zsh
       state: present
+  - name: Symlink all folders.
+    shell:
+      chdir: ~/.dotfiles
+      cmd: stow .
