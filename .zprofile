@@ -23,7 +23,7 @@ export PATH="$HOME/.local/bin/scripts:$PATH"
 
  # Star sway compositor
  if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-   exec Hyprland
+   exec sway
  fi
 
 #don't ask
