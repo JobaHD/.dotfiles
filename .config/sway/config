@@ -131,7 +131,6 @@ input type:touchpad {
 
     # Brightness controls
     # screen backlight, first set min and restore previous
-    exec light -N 5
     exec light -I
     bindsym XF86MonBrightnessUp   exec "light -A 10 && light -O"
     bindsym XF86MonBrightnessDown exec "light -U 10 && light -O"
