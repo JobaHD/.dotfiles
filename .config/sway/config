@@ -44,7 +44,7 @@ output $laptop_screen {
 # Requires: desktop-backgrounds-compat, swaybg
 # exec "/home/johnd/.config/sway/scripts/dynamicWalls"
 
-# Status Bar (swaybar)
+# Status Bar (waybar)
 bar {
      status_command i3blocks
 }
@@ -301,12 +301,6 @@ assign '[app_id="foot"]' workspace number 2
 assign '[app_id="keepassxc"]' workspace number 4
 assign '[app_id="signal-desktop"]' workspace number 5
 exec foot
-<<<<<<< HEAD
-=======
-exec keepassxc
-exec_always yambar
-exec easyeffects
->>>>>>> 57cf3e6 (feat: updated ansible playbook for arch.)
 
 # Screenshot keybindings
 bindsym $mod+p       exec grimshot --notify save active
