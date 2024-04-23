@@ -1,0 +1,20 @@
+- name: Bootstrap development environment
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: Install packages with pacman
+    pacman:
+      update_cache:
+      name:
+        - git
+        - stow
+        - neovim
+        - tmux
+        - fzf
+        - ripgrep
+        - fd
+        - zsh
+        - tree
+        - fastfetch
+        - python-pip
