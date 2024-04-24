@@ -33,6 +33,8 @@ set $laptop_screen 'eDP-1'
 # Set font for titles and bars
 font pango:Hack 10
 
+set $lock_bg /home/jrod/Wallpapers/colors.png fill
+
 ### Output configuration
 output $laptop_screen {
     scale_filter smart
@@ -58,12 +60,16 @@ bar {
 ### Idle configuration
 #
 # Example configuration:
-set $swaylock swaylock -f -c 000000
+set $swaylock swaylock --hide-keyboard-layout -i $lock_bg
+#
 
-exec swayidle -w \
+ exec swayidle -w \
           timeout 300 $swaylock \
-          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+          timeout 600 'swaymsg "output * power off"' \
+          resume 'swaymsg "output * power on"' \
           before-sleep $swaylock
+
+#bindsym $mod+l exec $swaylock
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -99,7 +105,7 @@ input type:touchpad {
 	#Make cmd and ctrl the same
 	input type:keyboard {
 	xkb_layout us
-	xkb_options "caps:backspace,shift:both_capslock"
+	xkb_options "caps:backspace,shift:both_capslock,altwin:ctrl_win"
 	}
 
 

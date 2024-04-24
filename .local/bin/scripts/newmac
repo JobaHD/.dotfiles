@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+sudo ip link set wlp2s0 down
+sleep 1
+macchanger -e -r wlp2s0
+sleep 1
+sudo ip link set wlp2s0 up
