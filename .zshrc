@@ -1,3 +1,4 @@
+# Lines configured by zsh-newuser-install
 # HIST_STAMPS="mm/dd/yyyy"
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -25,6 +26,8 @@ prompt redhat
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export TERM=foot
 
 # Preferred editor for local and remote sessions
  if [[ -n $SSH_CONNECTION ]]; then
@@ -51,8 +54,6 @@ source ~/.zprofile
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# export MANPATH="/usr/local/man:$MANPATH"
 
  # Where should I put you?
 bindkey -s '^F' "tmux-sessionizer\n"
