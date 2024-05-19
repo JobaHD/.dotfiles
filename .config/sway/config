@@ -19,12 +19,10 @@ set $term foot
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 # Recommends: rofi-wayland
-set $rofi_cmd wofi \
-        -terminal '$term'
+# set $dmenu dmenu
 # Shows a combined list of the applications with desktop files and
 # executables from PATH.
-# TODO: add window with the next release of rofi-wayland
-set $menu $rofi_cmd --show=run,drun,dmenu
+set $drun tofi-drun --drun-launch=true
 
 # Triggers a short notification
 set $notify dunstify --timeout 1500
@@ -32,9 +30,11 @@ set $notify dunstify --timeout 1500
 # Set your laptop screen name
 set $laptop_screen 'eDP-1'
 
+# Set font for titles and bars
+font pango:Hack 10
+
 ### Output configuration
 output $laptop_screen {
-    scale 2
     scale_filter smart
     adaptive_sync on
 }
@@ -42,11 +42,11 @@ output $laptop_screen {
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
-output * bg /home/jrod/Wallpapers/ganyu.png fill
+output * bg /home/johnd/Wallpapers/mk14.png fill
 
 # Status Bar (Waybar)
 bar {
-     swaybar_command waybar
+     status_command i3blocks
 }
 #
 # Example configuration:
@@ -90,15 +90,12 @@ bindswitch --reload --locked lid:on output $laptop_screen disable
 
 bindswitch --reload --locked lid:off output $laptop_screen enable
 
-#will keep laptop disabled if sway reloads on clamshell mode.
-exec_always ./sleep.sh
-
 ### Input configuration
 #
 # Example configuration:
 #
 
-input "1452:641:Apple_Internal_Keyboard_/_Trackpad" {
+input type:touchpad {
     dwt enabled                 #Disable while typing
     tap enabled                 #Tap registers as a click
     accel_profile adaptive      #adaptive/flat cursor acceleration
@@ -131,13 +128,12 @@ input "1452:641:Apple_Internal_Keyboard_/_Trackpad" {
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod+d exec $drun
 
     # Brightness controls
     # screen backlight, first set min and restore previous
-    exec light -I
-    bindsym XF86MonBrightnessUp   exec "light -A 10 && light -O"
-    bindsym XF86MonBrightnessDown exec "light -U 10 && light -O"
+    bindsym XF86MonBrightnessUp   exec "brightnessctl s +10%"
+    bindsym XF86MonBrightnessDown exec "brightnessctl s 10%-"
     # keyboard backlight
     bindsym XF86KbdBrightnessUp   exec "light -S 100 -s sysfs/leds/spi::kbd_backlight"
     bindsym XF86KbdBrightnessDown exec "light -S 0   -s sysfs/leds/spi::kbd_backlight"
@@ -300,14 +296,11 @@ include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "
 exec dunst
 
 # Autostart apps at their respective spaces.
-assign '[app_id="firefox"]' workspace number 1
+assign '[app_id="librewolf"]' workspace number 1
 assign '[app_id="foot"]' workspace number 2
-assign '[app_id="keepassxc"]' workspace number 5
-assign '[app_id="easyeffects"]' workspace number 5
-exec firefox
+assign '[app_id="keepassxc"]' workspace number 4
+assign '[app_id="signal-desktop"]' workspace number 5
 exec foot
-exec keepassxc
-exec easyeffects
 
 # Screenshot keybindings
 bindsym $mod+p       exec grimshot --notify save active

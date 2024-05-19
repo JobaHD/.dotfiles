@@ -9,6 +9,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/bin/scripts:$PATH"
 #export PATH="$CHROMEDRIVER:$PATH"
 
+ alias ls="ls --color=auto"
  alias l="ls -lhG"
  alias la="ls -alhG"
  alias vim="nvim"
