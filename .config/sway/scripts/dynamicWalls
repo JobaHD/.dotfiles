@@ -1,0 +1,8 @@
+#!/bin/sh
+
+while true; do
+    PID=`pidof swaybg`
+    sleep 1
+    kill $PID
+    sleep 10
+done

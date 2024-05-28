@@ -1,0 +1,3 @@
+#!/bin/sh
+
+swaymsg output "*" bg $(find /home/johnd/Wallpapers/ -regex ".*\(png\|jpeg\|jpg\)" -type f | shuf -n1) fill

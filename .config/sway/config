@@ -42,7 +42,7 @@ output $laptop_screen {
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
-output * bg /home/johnd/Wallpapers/mk14.png fill
+# exec "/home/johnd/.config/sway/scripts/dynamicWalls"
 
 # Status Bar (Waybar)
 bar {
