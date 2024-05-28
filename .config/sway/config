@@ -33,7 +33,7 @@ set $laptop_screen 'eDP-1'
 # Set font for titles and bars
 font pango:Hack 10
 
-set $lock_bg /home/jrod/Wallpapers/colors.png fill
+set $lock_bg '~/Wallpapers/colors.png' fill
 
 ### Output configuration
 output $laptop_screen {
@@ -44,7 +44,7 @@ output $laptop_screen {
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
-# exec "/home/johnd/.config/sway/scripts/dynamicWalls"
+output * bg '~/Wallpapers/mk14.png' fill
 
 # Status Bar (waybar)
 bar {
@@ -126,20 +126,6 @@ input type:touchpad {
     # screen backlight, first set min and restore previous
     bindsym XF86MonBrightnessUp   exec "brightnessctl s +10%"
     bindsym XF86MonBrightnessDown exec "brightnessctl s 10%-"
-    # keyboard backlight
-    bindsym XF86KbdBrightnessUp   exec "light -S 100 -s sysfs/leds/spi::kbd_backlight"
-    bindsym XF86KbdBrightnessDown exec "light -S 0   -s sysfs/leds/spi::kbd_backlight"
-
-    # Audio Controls
-    bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-    bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-    bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-
-    # Brightness controls
-    # screen backlight, first set min and restore previous
-    exec light -I
-    bindsym XF86MonBrightnessUp   exec "light -A 10 && light -O"
-    bindsym XF86MonBrightnessDown exec "light -U 10 && light -O"
     # keyboard backlight
     bindsym XF86KbdBrightnessUp   exec "light -S 100 -s sysfs/leds/spi::kbd_backlight"
     bindsym XF86KbdBrightnessDown exec "light -S 0   -s sysfs/leds/spi::kbd_backlight"
