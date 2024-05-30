@@ -57,7 +57,6 @@ export NVM_DIR="$HOME/.nvm"
 
  # Where should I put you?
 bindkey -s '^F' "tmux-sessionizer\n"
-source /usr/share/nvm/init-nvm.sh
 
 #startup tmux without, checks if tmux exists, checks it's an interactive shell, checks tmux isn't already running.
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
