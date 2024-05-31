@@ -16,6 +16,34 @@ color=#f5af19
 command=echo "Hello, $USER!"
 interval=once
 
+[dunst]
+command=$SCRIPT_DIR/dunst
+interval=once
+format=json
+markup=pango
+#min_width=50
+align=center
+
+[usb]
+command=$SCRIPT_DIR/usb
+markup=pango
+signal=1
+interval=10
+#IGNORE_LIST=[]
+IGNORE_LIST=["sda1", "mapper/root", "zram0"]
+#INFO_TEXT_COLOR=white
+#MOUNTED_COLOR=green
+#PLUGGED_COLOR=gray
+#LOCKED_COLOR=gray
+#UNLOCKED_NOT_MOUNTED_COLOR=yellow
+#PARTITIONLESS_COLOR=red
+#PARTITIONLESS_TEXT=no partitions
+#SEPARATOR=<span color='gray'> | </span>
+LOCKED_INDICATOR=" "
+UNLOCKED_INDICATOR=" "
+READONLY_INDICATOR=ro
+#TRUNCATE_FS_LABELS=[not set by default, accepts +/- integers]
+
 [battery]
 command=$SCRIPT_DIR/battery
 interval=30
@@ -23,16 +51,35 @@ LABEL=BAT
 LABEL=⚡
 BAT_NUMBER=0
 
+[cpu_usage2]
+command=$SCRIPT_DIR/cpu_usage2
+markup=pango
+interval=persist
+min_width=CPU 100.00%
+REFRESH_TIME=1
+LABEL=CPU
+WARN_PERCENT=50
+CRIT_PERCENT=80
+#DECIMALS=2
+
+[temperature]
+command=$SCRIPT_DIR/temperature
+label=TEMP:
+interval=10
+#T_WARN=70
+#T_CRIT=90
+#SENSOR_CHIP=""
+
 [memory]
 command=$SCRIPT_DIR/memory
 label=MEM
 interval=30
 
-[memory]
-command=$SCRIPT_DIR/memory
-label=SWAP
-instance=swap
-interval=30
+#[memory]
+#command=$SCRIPT_DIR/memory
+#label=SWAP
+#instance=swap
+#interval=30
 
 [iface]
 command=$SCRIPT_DIR/iface
@@ -43,6 +90,16 @@ color=#00FF00
 interval=10
 # set this to 1 to display the name of the connected WIFI interface instead of the IP address.
 display_wifi_name=1
+
+[iface]
+command=$SCRIPT_DIR/iface
+#LABEL=wlan0:
+IFACE=wlan0
+#ADDRESS_FAMILY=inet6?
+color=#00FF00
+interval=10
+# set this to 1 to display the name of the connected WIFI interface instead of the IP address.
+# display_wifi_name=1
 
 [time]
 command=date '+%Y-%m-%d %H:%M:%S'
