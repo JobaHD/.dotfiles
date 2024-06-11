@@ -300,3 +300,4 @@ bindsym $mod+Shift+p exec grimshot --notify save area
 
 #border
 default_border pixel
+exec_always gammastep -l 26.616756:-80.068451

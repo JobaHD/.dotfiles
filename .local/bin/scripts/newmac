@@ -1,1 +1,0 @@
-sudo ip link set wlp2s0 down && sudo macchanger -e -r wlp2s0 && sudo ip link set wlp2s0 up
