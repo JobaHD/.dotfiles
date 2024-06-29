@@ -18,7 +18,7 @@ export PATH="$HOME/.local/bin/scripts:$PATH"
  alias kbon="light -s sysfs/leds/kbd_backlight -S 10"
  alias kboff="light -s sysfs/leds/kbd_backlight -S 0"
  alias spot="flatpak run io.github.hrkfdn.ncspot"
- alias ip="ip -c=auto"
+ alias logout="udiskie-umount /dev/mapper/luks* && loginctl terminate-user johnd"
  # dont ask (this should be an actual script
  alias ip="ip -c=auto"
 
