@@ -4,6 +4,7 @@ VIM="nvim"
 #export JAVA_HOME="/opt/java/jdk-17.0.10+7"
 export GIT_EDITOR=$VIM
 export DOTFILES="$HOME/.dotfiles"
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/bin/scripts:$PATH"
@@ -18,7 +19,7 @@ export PATH="$HOME/.local/bin/scripts:$PATH"
  alias kbon="light -s sysfs/leds/kbd_backlight -S 10"
  alias kboff="light -s sysfs/leds/kbd_backlight -S 0"
  alias spot="flatpak run io.github.hrkfdn.ncspot"
- alias logout="udiskie-umount /dev/mapper/luks* && loginctl terminate-user johnd"
+ alias logout="udiskie-umount /dev/mapper/luks*; sleep 1; loginctl terminate-user johnd"
  # dont ask (this should be an actual script
  alias ip="ip -c=auto"
 
