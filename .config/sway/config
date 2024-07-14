@@ -31,7 +31,7 @@ set $notify dunstify --timeout 1500
 set $laptop_screen 'eDP-1'
 
 # Set font for titles and bars
-font pango:Hack 10
+font pango:Hack Nerd Font 10
 
 set $lock_bg '~/Wallpapers/colors.png' fill
 
@@ -60,7 +60,7 @@ bar {
 ### Idle configuration
 #
 # Example configuration:
-set $swaylock 'udiskie-umount /dev/mapper/luks* && loginctl terminate-user $USER'
+set $swaylock 'swaylock -F -c 000000'
 #
 
  exec swayidle -w \
@@ -69,7 +69,7 @@ set $swaylock 'udiskie-umount /dev/mapper/luks* && loginctl terminate-user $USER
           resume 'swaymsg "output * power on"' \
           before-sleep $swaylock
 
-#bindsym $mod+l exec $swaylock
+bindsym $mod+Shift+w exec $swaylock
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -112,7 +112,6 @@ input type:touchpad {
 ### Key bindings
 #
 # Basics:
-#
     # Start a terminal
     bindsym $mod+Return exec $term
 

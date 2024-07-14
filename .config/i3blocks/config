@@ -10,6 +10,7 @@
 separator=true
 separator_block_width=15
 SCRIPT_DIR=./scripts
+markup=pango
 
 [greetings]
 color=#f5af19
@@ -20,7 +21,6 @@ interval=once
 command=$SCRIPT_DIR/dunst
 interval=once
 format=json
-markup=pango
 #min_width=50
 align=center
 
