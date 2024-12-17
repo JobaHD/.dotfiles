@@ -16,9 +16,11 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 # Enables themes
-autoload -Uz promptinit
-promptinit
-prompt redhat
+# autoload -Uz promptinit
+# promptinit
+# prompt redhat
+export PS1="%{%F{243}%}%n%{%F{245}%}@%{%F{249}%}%m %{%F{254}%}%1~ %{%f%}$ "
+
 
 # User configuration
 
@@ -27,7 +29,7 @@ prompt redhat
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export TERM=foot
+export TERM=alacritty
 
 # Preferred editor for local and remote sessions
  if [[ -n $SSH_CONNECTION ]]; then
@@ -59,8 +61,11 @@ export NVM_DIR="$HOME/.nvm"
 bindkey -s '^F' "tmux-sessionizer\n"
 
 #startup tmux without, checks if tmux exists, checks it's an interactive shell, checks tmux isn't already running.
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
-fi
+#if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+#  exec tmux
+#fi
 
-source /usr/bin/aws_zsh_completer.sh
+#source /usr/bin/aws_zsh_completer.sh
+
+# For syntax highlighting.
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

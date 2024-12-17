@@ -8,6 +8,7 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.local/bin/scripts:$PATH"
+export PATH="$HOME/usr/local/texlive:$PATH"
 #export PATH="$CHROMEDRIVER:$PATH"
 
  alias ls="ls --color=auto"
@@ -19,6 +20,9 @@ export PATH="$HOME/.local/bin/scripts:$PATH"
  alias kboff="light -s sysfs/leds/kbd_backlight -S 0"
  alias spot="flatpak run io.github.hrkfdn.ncspot"
  alias logout="udiskie-umount /dev/mapper/luks*; sleep 1; loginctl terminate-user johnd"
+ alias penv="python3 -m venv ./.venv && source ./.venv/bin/activate && pip install --upgrade pip"
+
+
  # dont ask (this should be an actual script
  alias ip="ip -c=auto"
 
@@ -42,9 +46,9 @@ function pomo() {
     done
 }
 
-# change brew based on console arch.
-# if [ "$(arch)" = "arm64" ]; then
-#     eval "$(/opt/homebrew/bin/brew shellenv)"
-# else
-#     eval "$(/usr/local/bin/brew shellenv)"
-# fi
+#change brew based on console arch.
+if [ "$(arch)" = "arm64" ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+    eval "$(/usr/local/bin/brew shellenv)"
+fi

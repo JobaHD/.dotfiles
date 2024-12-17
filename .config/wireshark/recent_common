@@ -1,0 +1,161 @@
+# Common recent settings file for Wireshark 4.4.0.
+#
+# This file is regenerated each time Wireshark is quit
+# and when changing configuration profile.
+# So be careful, if you want to make manual changes here.
+
+######## Recent capture files (latest last), cannot be altered through command line ########
+
+recent.capture_file: /Users/johndoe/Nextcloud/Projects/college/bearshell/try_me.pcap
+
+######## Recent capture filters (latest first), cannot be altered through command line ########
+
+
+######## Recent display filters (latest last), cannot be altered through command line ########
+
+recent.display_filter: eth.addr eq 80:32:53:b1:3c:d5 and eth.addr eq 20:c0:47:d2:42:0e
+recent.display_filter: tcp.stream eq 4
+recent.display_filter: tcp.stream eq 3
+recent.display_filter: tcp.stream eq 2
+recent.display_filter: tcp.stream eq 1
+recent.display_filter: tcp.stream eq 0
+recent.display_filter: tcp.stream eq 34
+recent.display_filter: tcp.stream eq 77
+recent.display_filter: tcp.stream eq 76
+recent.display_filter: tcp.stream eq 75
+
+# Main window geometry.
+# Decimal numbers.
+gui.geometry_main_x: 0
+gui.geometry_main_y: 38
+gui.geometry_main_width: 1470
+gui.geometry_main_height: 813
+
+# Main window maximized.
+# true or false (case-insensitive).
+gui.geometry_main_maximized: true
+
+# Main window geometry state.
+# Hex byte string.
+gui.geometry_main: 01d9d0cb000300000000000000000026000005bd0000036e0000012d00000042000004ec0000036e000000000200000005be0000000000000042000005bd0000036e
+
+# Leftalign Action Buttons.
+# true or false (case-insensitive).
+gui.geometry_leftalign_actions: false
+
+# Last used Configuration Profile.
+gui.last_used_profile: Default
+
+# Number of packets or events to check for automatic profile switching.
+# Decimal number. Zero disables switching.
+#gui.profile_switch_check_count: 1000
+
+# Warn if running with elevated permissions (e.g. as root).
+# true or false (case-insensitive).
+privs.warn_if_elevated: true
+
+# Warn if Wireshark is unable to capture.
+# true or false (case-insensitive).
+sys.warn_if_no_capture: true
+
+# Find packet search in.
+# One of: PACKET_LIST, PACKET_DETAILS, PACKET_BYTES
+gui.search_in: PACKET_LIST
+
+# Find packet character set.
+# One of: NARROW_AND_WIDE, NARROW, WIDE
+gui.search_char_set: NARROW_AND_WIDE
+
+# Find packet case sensitive search.
+# true or false (case-insensitive).
+gui.search_case_sensitive: false
+
+# Find packet search reverse direction.
+# true or false (case-insensitive).
+gui.search_reverse_dir: false
+
+# Find packet search multiple occurrences.
+# true or false (case-insensitive).
+gui.search_multiple_occurs: false
+
+# Find packet search type.
+# One of: DISPLAY_FILTER, HEX_VALUE, STRING, REGEX
+gui.search_type: DISPLAY_FILTER
+
+# Geometry and maximized state of ExpertInfoDialog window.
+# Decimal integers.
+gui.geom.ExpertInfoDialog.x: 284
+gui.geom.ExpertInfoDialog.y: 38
+gui.geom.ExpertInfoDialog.width: 882
+gui.geom.ExpertInfoDialog.height: 810
+# true or false (case-insensitive).
+gui.geom.ExpertInfoDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.ExpertInfoDialog.qt_geometry: 01d9d0cb000300000000011c000000260000048d0000036b0000011c000000420000048d0000036b000000000000000005be0000011c000000420000048d0000036b
+
+# Geometry and maximized state of TrafficTableDialog window.
+# Decimal integers.
+gui.geom.TrafficTableDialog.x: 0
+gui.geom.TrafficTableDialog.y: 128
+gui.geom.TrafficTableDialog.width: 1468
+gui.geom.TrafficTableDialog.height: 609
+# true or false (case-insensitive).
+gui.geom.TrafficTableDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.TrafficTableDialog.qt_geometry: 01d9d0cb000300000000000000000080000005bb000002fc000000000000009c000005bb000002fc000000000000000005be000000000000009c000005bb000002fc
+
+# Geometry and maximized state of PreferencesDialog window.
+# Decimal integers.
+gui.geom.PreferencesDialog.x: 395
+gui.geom.PreferencesDialog.y: 205
+gui.geom.PreferencesDialog.width: 774
+gui.geom.PreferencesDialog.height: 554
+# true or false (case-insensitive).
+gui.geom.PreferencesDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.PreferencesDialog.qt_geometry: 01d9d0cb000300000000018b000000cd00000490000003120000018b000000e90000049000000312000000000000000005be0000018b000000e90000049000000312
+
+# Geometry and maximized state of FollowStreamDialog window.
+# Decimal integers.
+gui.geom.FollowStreamDialog.x: 192
+gui.geom.FollowStreamDialog.y: 38
+gui.geom.FollowStreamDialog.width: 980
+gui.geom.FollowStreamDialog.height: 811
+# true or false (case-insensitive).
+gui.geom.FollowStreamDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.FollowStreamDialog.qt_geometry: 01d9d0cb00030000000000c000000026000004930000036c000000c000000042000004930000036c000000000000000005be000000c000000042000004930000036c
+
+# Geometry and maximized state of EnabledProtocolsDialog window.
+# Decimal integers.
+gui.geom.EnabledProtocolsDialog.x: 232
+gui.geom.EnabledProtocolsDialog.y: 136
+gui.geom.EnabledProtocolsDialog.width: 987
+gui.geom.EnabledProtocolsDialog.height: 595
+# true or false (case-insensitive).
+gui.geom.EnabledProtocolsDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.EnabledProtocolsDialog.qt_geometry: 01d9d0cb00030000000000e800000088000004c2000002f6000000e8000000a4000004c2000002f6000000000000000005be000000e8000000a4000004c2000002f6
+
+# Geometry and maximized state of http_req window.
+# Decimal integers.
+gui.geom.http_req.x: 325
+gui.geom.http_req.y: 203
+gui.geom.http_req.width: 800
+gui.geom.http_req.height: 459
+# true or false (case-insensitive).
+gui.geom.http_req.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.http_req.qt_geometry: 01d9d0cb0003000000000145000000cb00000464000002b100000145000000e700000464000002b1000000000000000005be00000145000000e700000464000002b1
+
+# Custom colors.
+# List of custom colors selected in Qt color picker.
+gui.custom_colors: 
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff"
